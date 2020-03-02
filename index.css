@@ -6,7 +6,13 @@ body {
 	padding: 0px;
 	overflow-x: hidden;
 }
-
+#head {
+	line-height: 1;
+}
+#spam {
+	color: #554d90;
+	font-size: 2rem;
+}
 .card-img-top {
 	width: 80px;
 	height: 110px;
@@ -20,14 +26,14 @@ body {
 	display: inline-block;
 	text-align: left;
 }
+h1 {
+	color: #554d90;
+	font-size: 3.5rem;
+}
 #krug {
 	max-width: 100%;
 	width: 10em;
 	height: 15em;
-}
-h1 {
-	color: #554d90;
-	font-size: 3.5rem;
 }
 #cleaning {
 	color: #554d90;
@@ -40,17 +46,31 @@ h1 {
 p {
 	color: gray;
 }
-#button {
+#button2,
+#button3,
+#button4,
+#button5 {
 	border-radius: 18px;
 	transition-duration: 0.4s;
 	color: #fcab24;
 	outline: none;
 }
 
-#button:hover {
-	background-color: #fcab24; /* Green */
+#button2:hover,
+#button3:hover,
+#button4:hover,
+#button5:hover {
+	background-color: #fcab24;
 	color: white;
 	outline: none;
+}
+#button1:focus,
+#button2:focus,
+#button3:focus,
+#button4:focus,
+#button5:focus {
+	outline: none !important;
+	box-shadow: none;
 }
 
 #button1 {
@@ -60,27 +80,30 @@ p {
 	border-color: #554d90;
 }
 #button1:hover {
-	background-color: #554d90; /* Green */
+	background-color: #554d90;
 	color: white;
 }
-
-.card > .list-group:first-child .list-group-item:first-child,
-.card > .list-group:last-child .list-group-item:last-child {
-	border-radius: 18px;
+[aria-expanded="false"] > .expanded,
+[aria-expanded="true"] > .collapsed {
+	display: none;
 }
+
 span.badge.badge-primary.badge-pill {
 	background-color: #554d90;
 }
-
-.list-group-item {
-	border: none;
-	color: gray;
-}
-
 ul.list-group {
 	border-radius: 18px;
 	border: 1px solid #fcab24;
 }
+.list-group-item {
+	border: none;
+	color: gray;
+}
+.card > .list-group:first-child .list-group-item:first-child,
+.card > .list-group:last-child .list-group-item:last-child {
+	border-radius: 18px;
+}
+
 @media (max-width: 1200px) {
 	.card {
 		margin-top: 4rem;
@@ -99,10 +122,6 @@ ul.list-group {
 	#cleaning {
 		font-size: 2rem;
 	}
-}
-[aria-expanded="false"] > .expanded,
-[aria-expanded="true"] > .collapsed {
-	display: none;
 }
 .map-container {
 	overflow: hidden;
@@ -129,19 +148,4 @@ ul.list-group {
 #bp {
 	width: 30%;
 	border-bottom: 3px solid #fcab24 !important;
-}
-#button:focus {
-	outline: none !important;
-	box-shadow: none;
-}
-#button1:focus {
-	outline: none !important;
-	box-shadow: none;
-}
-#spam {
-	color: #554d90;
-	font-size: 2rem;
-}
-#head {
-	line-height: 1;
 }

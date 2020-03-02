@@ -3,13 +3,8 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
-	"scripts": {
-		"dev": "nodemon index.js"
-	},
+	"scripts": {},
 	"author": "Teodor Taneski Feldschau",
 	"license": "ISC",
-	"dependencies": {
-		"express": "^4.17.1",
-		"nodemon": "^2.0.2"
-	}
+	"dependencies": {}
 }
