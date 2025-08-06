@@ -1,10 +1,10 @@
 {
-	"name": "hemboi",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {},
-	"author": "Teodor Taneski Feldschau",
-	"license": "ISC",
-	"dependencies": {}
+  "name": "hemboi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Teoslaf1",
+  "license": "ISC",
+  "dependencies": {}
 }

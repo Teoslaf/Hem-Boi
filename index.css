@@ -1,153 +1,259 @@
 html,
 body {
-	font-family: 'Arapey', serif;
-	font-size: 1.1rem;
-	width: 100%;
-	height: 100%;
-	margin: 0px;
-	padding: 0px;
-	overflow-x: hidden;
+  font-family: "Arapey", serif;
+  font-size: 1.1rem;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 #head {
-	line-height: 1;
+  line-height: 1;
 }
 #spam {
-	color: #554d90;
-	font-size: 2rem;
+  color: #554d90;
+  font-size: 2rem;
 }
 .card-img-top {
-	width: 80px;
-	height: 110px;
-	margin: 10px;
-	border: none;
+  width: 80px;
+  height: 110px;
+  margin: 10px;
+  border: none;
 }
 .card {
-	border: none;
+  border: none;
 }
 #text {
-	display: inline-block;
-	text-align: left;
+  display: inline-block;
+  text-align: left;
 }
 h1 {
-	color: #554d90;
-	font-size: 3.5rem;
+  color: #554d90;
+  font-size: 3.5rem;
 }
 #krug {
-	max-width: 100%;
-	width: 10em;
-	height: 15em;
+  max-width: 100%;
+  width: 10em;
+  height: 15em;
 }
 #cleaning {
-	color: #554d90;
-	font-size: 2.5rem;
+  color: #554d90;
+  font-size: 2.5rem;
 }
 #price {
-	color: #554d90;
-	font-size: 2.5rem;
+  color: #554d90;
+  font-size: 2.5rem;
 }
 p {
-	color: gray;
+  color: gray;
 }
 #button2,
 #button3,
 #button4,
 #button5 {
-	border-radius: 18px;
-	transition-duration: 0.4s;
-	color: #fcab24;
-	outline: none;
+  border-radius: 18px;
+  transition-duration: 0.4s;
+  color: #fcab24;
+  outline: none;
 }
 
 #button2:hover,
 #button3:hover,
 #button4:hover,
 #button5:hover {
-	background-color: #fcab24;
-	color: white;
-	outline: none;
+  background-color: #fcab24;
+  color: white;
+  outline: none;
 }
 #button1:focus,
 #button2:focus,
 #button3:focus,
 #button4:focus,
 #button5:focus {
-	outline: none !important;
-	box-shadow: none;
+  outline: none !important;
+  box-shadow: none;
 }
 
 #button1 {
-	border-radius: 18px;
-	transition-duration: 0.4s;
-	color: #554d90;
-	border-color: #554d90;
+  border-radius: 18px;
+  transition-duration: 0.4s;
+  color: #554d90;
+  border-color: #554d90;
 }
 #button1:hover {
-	background-color: #554d90;
-	color: white;
+  background-color: #554d90;
+  color: white;
 }
 [aria-expanded="false"] > .expanded,
 [aria-expanded="true"] > .collapsed {
-	display: none;
+  display: none;
 }
 
 span.badge.badge-primary.badge-pill {
-	background-color: #554d90;
+  background-color: #554d90;
 }
 ul.list-group {
-	border-radius: 18px;
-	border: 1px solid #fcab24;
+  border-radius: 18px;
+  border: 1px solid #fcab24;
 }
 .list-group-item {
-	border: none;
-	color: gray;
+  border: none;
+  color: gray;
 }
 .card > .list-group:first-child .list-group-item:first-child,
 .card > .list-group:last-child .list-group-item:last-child {
-	border-radius: 18px;
+  border-radius: 18px;
 }
 
 @media (max-width: 1200px) {
-	.card {
-		margin-top: 4rem;
-	}
+  .card {
+    margin-top: 4rem;
+  }
 }
 @media (max-width: 992px) {
-	#text {
-		display: inline-block;
-		text-align: center;
-	}
+  #text {
+    display: inline-block;
+    text-align: center;
+  }
 }
 @media (max-width: 1200px) {
-	#head {
-		font-size: 3rem;
-	}
-	#cleaning {
-		font-size: 2rem;
-	}
+  #head {
+    font-size: 3rem;
+  }
+  #cleaning {
+    font-size: 2rem;
+  }
 }
 .map-container {
-	overflow: hidden;
-	padding-bottom: 56.25%;
-	position: relative;
-	height: 0;
-	padding-bottom: 30.25%;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  padding-bottom: 30.25%;
 }
 .map-container iframe {
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 #footer {
-	background-color: rgba(210, 230, 253, 0.3);
-	color: #554d90;
+  background-color: rgba(210, 230, 253, 0.3);
+  color: #554d90;
 }
 #bb {
-	width: 100%;
-	border-bottom: 3px solid #fcab24 !important;
+  width: 100%;
+  border-bottom: 3px solid #fcab24 !important;
 }
 #bp {
-	width: 30%;
-	border-bottom: 3px solid #fcab24 !important;
+  width: 30%;
+  border-bottom: 3px solid #fcab24 !important;
+}
+/* Better accordion centering and smoothness */
+#accordion .card {
+  min-height: 200px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#accordion .collapse {
+  transition: height 0.3s ease;
+}
+
+#accordion .collapsing {
+  transition: height 0.3s ease;
+  overflow: hidden;
+}
+
+/* Ensure buttons are evenly spaced and same size */
+#accordion .btn {
+  min-width: 120px;
+}
+
+/* Center the accordion container */
+#myGroup {
+  justify-content: center !important;
+}
+/* Custom price section styling - exact original layout */
+.price-card {
+  transition: all 0.3s ease;
+}
+
+.price-card .list-group {
+  transition: opacity 0.3s ease;
+}
+
+/* Button styling for price section - matches original */
+#price-section .btn.active {
+  background-color: #fcab24;
+  color: white;
+  border-color: #fcab24;
+}
+
+#price-section .btn.active:hover {
+  background-color: #fcab24;
+  color: white;
+  border-color: #fcab24;
+}
+
+/* Ensure original flexbox layout works - center alignment */
+#myGroup {
+  align-items: center !important;
+}
+
+/* Fix the price card alignment */
+#price-section .price-card {
+  margin: 0;
+}
+
+/* Add bottom padding to price section */
+#price-section {
+  padding-bottom: 4rem;
+}
+
+/* Fix the orange border on price cards */
+#price-section .list-group {
+  border-radius: 18px !important;
+  border: 1px solid #fcab24 !important;
+  overflow: hidden;
+}
+
+#price-section .list-group-item:first-child {
+  border-top-left-radius: 18px !important;
+  border-top-right-radius: 18px !important;
+}
+
+#price-section .list-group-item:last-child {
+  border-bottom-left-radius: 18px !important;
+  border-bottom-right-radius: 18px !important;
+}
+/* Make buttons stretch to match price card width on mobile */
+@media (max-width: 767px) {
+  #myGroup {
+    flex-direction: column;
+    align-items: stretch !important;
+  }
+
+  #myGroup .d-flex.flex-column {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 2rem;
+  }
+
+  #myGroup .btn {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #myGroup .col-md-4.col-lg-3.px-0 {
+    width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
